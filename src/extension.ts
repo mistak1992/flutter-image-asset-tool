@@ -30,7 +30,7 @@ export function activate(context: vscode.ExtensionContext) {
 			var imageBasename = await renameImage(imagePath);
 
 			for (let mode = 1; mode < 4; mode++) {
-				scaleImageToMode(destinationPath, imageBasename, imagePath, 1.0 * mode);
+				scaleImageByScaleTimes(destinationPath, imageBasename, imagePath, 1.0 * mode);
 			}
 		}
 
@@ -89,7 +89,7 @@ export async function renameImage(imagePath: string) {
 	return imageBasename;
 }
 
-export function scaleImageToMode(directoryPath: string, fileBasename: string, imagePath: string, scaleTimes: number) {
+export function scaleImageByScaleTimes(directoryPath: string, fileBasename: string, imagePath: string, scaleTimes: number) {
 	let scale = (1.0 / 3) * scaleTimes;
 	var destinationPath = path.join(directoryPath, fileBasename);
 	if (scaleTimes === 1.0) {
