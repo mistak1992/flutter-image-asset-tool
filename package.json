@@ -1,8 +1,13 @@
 {
 	"name": "flutter-image-asset-tool",
 	"displayName": "flutter-image-asset-tool",
-	"description": "flutter image asset generate from 3x image",
+	"description": "A simple VSCode extension(Base on extension 'Flutter Image Asset Generator') which helps you generate your image assets from 3x to 1x, 2x. And rename your image before add to your assets folder.",
 	"version": "0.0.1",
+	"icon": "assets/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mistak1992/flutter-image-asset-tool"
+	},
 	"engines": {
 		"vscode": "^1.63.0"
 	},
@@ -17,7 +22,7 @@
 		"commands": [
 			{
 				"command": "flutter-image-asset-tool.generate",
-				"title": "Flutter Image Asset: Generate"
+				"title": "Flutter-image-asset-tool: Add Image"
 			}
 		],
 		"menus": {

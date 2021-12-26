@@ -1,70 +1,33 @@
-# flutter-image-asset-tool README
+# flutter-image-asset-tool 
 
-This is the README for your extension "flutter-image-asset-tool". After writing up a brief description, we recommend including the following sections.
+A simple [Visual Studio Code](https://code.visualstudio.com/) extension(Base on extension [Flutter Image Asset Generator](https://github.com/devmuaz/flutter-image-assets)) which helps you generate your image assets from 3x to 1x, 2x. And rename your image before add to your assets folder.
 
-## Features
+In China, we usually generate 1x and 3x image from 3x. such as "蓝湖". That is the part different from extension [Flutter Image Asset Generator](https://github.com/devmuaz/flutter-image-assets)).
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Usage
 
-For example if there is an image subfolder under your extension project workspace:
+1. After installing the extension, you should see a new option has been added your context menu when you right click on any folder inside the `Explorer` section named `Flutter-image-asset-tool: Add Image`:
 
-\!\[feature X\]\(images/feature-x.png\)
+2. Click on it and select the image you want to add.. after that, the selected image will be choosen.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+3.  Modify Image name in the InputBox, and click confirm to the name of image.It will scaled down to 1x, 2x in seprated directories.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Currently, this extension only generates the scaled images.. but not adding them to the `pubspec.yaml` file so you have to add them yourself.
 
-## Release Notes
+## Inspiration
 
-Users appreciate release notes as you update your extension.
+Thanks for [devmuaz](https://github.com/devmuaz). you can find more detail in project [flutter-image-assets](https://github.com/devmuaz/flutter-image-assets)
 
-### 1.0.0
+## Contributions & Support
 
-Initial release of ...
+Issues and pull requests are always welcome 😄
 
-### 1.0.1
+If you found this extension useful for you and liked it, please star the repo ⭐️ it would mean a lot!
 
-Fixed issue #.
+## License
 
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+**MIT**
 
 **Enjoy!**
